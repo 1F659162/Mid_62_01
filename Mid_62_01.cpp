@@ -4,12 +4,12 @@ using namespace std;
 int main()
 {
 	int r , n1 , n2 , n3 , n4 , n5 , n6 , count;
-	n1 = n2 = n3 = n4 = n5 = n6 = count = 0;
+	n1 = n2 = n3 = n4 = n5 = n6 = 0;
 
 	srand(time(NULL));
 	cout << "Random number 1 to 6" << endl;
 	cout << "------------------------------------------------------------------------------------" << endl;
-	while (count != 10)
+	for(int n = 0 ; n < 10 ; n++)
 	{
 		for (int i = 1 ; i <= 10 ; i++)
 		{
@@ -22,8 +22,7 @@ int main()
 			if(r == 5)n5++;
 			if(r == 6)n6++;
 		}
-		cout << endl;
-		count += 1;
+		cout << endl<<endl;
 	}
 	cout << "------------------------------------------------------------------------------------" << endl;
 	cout << "Number    " << "Requency" << endl;
